@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using static ListButtonData;
 
+[HelpURL(@"https://github.com/Zakarea79/Free-Unity-Touchpad")]
 public class ZJoystoke : MonoBehaviour
 {
     private EventTrigger Et;
