@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3129784604818922626}
   - component: {fileID: 3129784604818922627}
   m_Layer: 5
-  m_Name: Base
+  m_Name: Joystoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 3129784605659199597}
   - component: {fileID: 3129784605659199599}
   m_Layer: 5
-  m_Name: Stok
+  m_Name: stoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

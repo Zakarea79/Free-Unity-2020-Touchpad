@@ -14,5 +14,9 @@ public class Sample : MonoBehaviour
         {
             gameObject.GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
         }
+        if(ZInput.GetKeyDown(KeyCode.Space))
+        {
+            gameObject.GetComponent<MeshRenderer>().material.color = Random.ColorHSV();
+        }
     }
 }

@@ -17,9 +17,9 @@ public class ZJoystoke : MonoBehaviour
     
     private void Awake() 
     {
-        if(AxisName_H != "")
+        if(AxisName_H != "" && Axis.ContainsKey(AxisName_H) == false) 
             Axis.Add(AxisName_H , 0);
-        if(AxisName_V != "")
+        if(AxisName_V != "" && Axis.ContainsKey(AxisName_V) == false) 
             Axis.Add(AxisName_V , 0);
     }
 

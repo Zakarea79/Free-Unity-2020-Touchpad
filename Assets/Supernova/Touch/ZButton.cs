@@ -15,14 +15,20 @@ public class ZButton : MonoBehaviour
 
     private void Awake() 
     {
-        if(Keycode != "")
+        if(Keycode != ""
+            && Button_Down.ContainsKey(Keycode) == false
+            && Button_Up.ContainsKey(Keycode) == false
+            && Button_Press.ContainsKey(Keycode) == false)
         {
             Button_Down.Add(Keycode , false);   
             Button_Up.Add(Keycode , false);   
             Button_Press.Add(Keycode , false);  
         }
         //--------------------------------
-        if(XKeyCode != KeyCode.None)
+        if(XKeyCode != KeyCode.None
+            && Button_Down_KeyCode.ContainsKey(XKeyCode) == false
+            && Button_Up_KeyCode.ContainsKey(XKeyCode) == false
+            && Button_Press_KeyCode.ContainsKey(XKeyCode) == false)
         {
             Button_Down_KeyCode.Add(XKeyCode , false);   
             Button_Up_KeyCode.Add(XKeyCode , false);   
