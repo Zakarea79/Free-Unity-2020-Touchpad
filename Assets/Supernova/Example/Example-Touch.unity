@@ -769,6 +769,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
     - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: Reang
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
       propertyPath: UpButton
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
@@ -776,6 +780,26 @@ PrefabInstance:
       propertyPath: PressButton
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: BakgrundUpButton
+      value: 
+      objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: BakgrundPressButton
+      value: 
+      objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: BakgrundPressColor.b
+      value: 0.6462264
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: BakgrundPressColor.g
+      value: 0.6462264
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: BakgrundPressColor.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
 --- !u!1 &1377959881
@@ -826,7 +850,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}

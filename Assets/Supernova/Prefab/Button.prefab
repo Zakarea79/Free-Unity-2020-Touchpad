@@ -88,9 +88,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b676086a2e2c3940b8c87a8c7e1ddc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Keycode: Mosht
+  Keycode: Button1
   XKeyCode: 0
   PressColor: {r: 0.5686275, g: 0.5686275, b: 0.5686275, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
-  PressButton: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  UpButton: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  PressButton: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+  UpButton: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}

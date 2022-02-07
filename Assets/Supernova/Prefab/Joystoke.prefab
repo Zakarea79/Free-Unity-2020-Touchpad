@@ -166,9 +166,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AxisName_H: X
   AxisName_V: Y
+  BlockX: 0
+  BlockY: 0
+  Range: 0.5
   PressColor: {r: 0.5686275, g: 0.5686275, b: 0.5686275, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
   PressButton: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
   UpButton: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
-  BlockX: 0
-  BlockY: 0

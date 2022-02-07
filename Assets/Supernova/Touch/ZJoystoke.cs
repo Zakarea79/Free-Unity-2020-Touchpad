@@ -10,10 +10,14 @@ public class ZJoystoke : MonoBehaviour
 {
     private EventTrigger Et;
     [SerializeField] private string AxisName_H , AxisName_V;
-    public Color PressColor = new Color32(130 , 130 , 130 , 255) , normalColor = new Color32(255,255,255, 255);
-    public Sprite PressButton , UpButton;
     public bool BlockX , BlockY; 
+    [Range(0 , 1f)][SerializeField] private float Range =.8f;
+    public Color PressColor = new Color32(130 , 130 , 130 , 255) , NormalColor = new Color32(255,255,255, 255);
+    public Color BakgrundPressColor = new Color32(130 , 130 , 130 , 255) , BakgrundNormalColor = new Color32(255,255,255, 255);
+
+    public Sprite PressButton , UpButton , BakgrundPressButton , BakgrundUpButton;
     private Image BaseColor;
+    private Image BagrundBaseColor;
     
     private void Awake() 
     {
@@ -26,6 +30,7 @@ public class ZJoystoke : MonoBehaviour
     void Start()
     {
         BaseColor = GetComponent<Image>();
+        BagrundBaseColor = transform.parent.GetComponent<Image>();
         Et = gameObject.AddComponent<EventTrigger>();
         EventTrigger.Entry entry = new EventTrigger.Entry();
         entry.eventID = EventTriggerType.Drag;
@@ -38,8 +43,12 @@ public class ZJoystoke : MonoBehaviour
         entryUp.eventID = EventTriggerType.PointerUp;
         entryUp.callback.AddListener((data) => 
         {
-            BaseColor.color = normalColor;
+            BaseColor.color = NormalColor;
             BaseColor.sprite = UpButton;
+
+            BagrundBaseColor.color = BakgrundNormalColor;
+            BagrundBaseColor.sprite = BakgrundUpButton;
+
             transform.position = transform.parent.position;
             Axis[AxisName_H] = 0;
             Axis[AxisName_V] = 0;
@@ -51,6 +60,9 @@ public class ZJoystoke : MonoBehaviour
         {
             BaseColor.color = PressColor;
             BaseColor.sprite = PressButton;
+
+            BagrundBaseColor.color = BakgrundPressColor;
+            BagrundBaseColor.sprite = BakgrundPressButton;
         });
 
         Et.triggers.Add(entry);
@@ -61,16 +73,16 @@ public class ZJoystoke : MonoBehaviour
     public void DragEvent(PointerEventData data)
     {
         transform.position = data.position;
-        float X = Mathf.Clamp(transform.localPosition.x , -80 , 80);
-        float Y = Mathf.Clamp(transform.localPosition.y , -80 , 80);
+        float X = Mathf.Clamp(transform.localPosition.x , -Range * 100 , Range * 100);
+        float Y = Mathf.Clamp(transform.localPosition.y , -Range * 100 , Range * 100);
         transform.localPosition = new Vector2(BlockX == true ? 0 : X , BlockY == true ? 0 : Y);
 
         if(AxisName_H != "")
-            Axis[AxisName_H] = Mathf.Clamp(transform.localPosition.x , -80f , 80f) / 80;
+            Axis[AxisName_H] = Mathf.Clamp(transform.localPosition.x , -Range * 100 , Range * 100f) / (Range  * 100);
         else
             Debug.LogError("AxisName_H Equals Null");
         if(AxisName_V != "")
-            Axis[AxisName_V] = Mathf.Clamp(transform.localPosition.y , -80f , 80f) / 80;
+            Axis[AxisName_V] = Mathf.Clamp(transform.localPosition.y , -Range * 100 , Range * 100f) / (Range  * 100);
         else
             Debug.LogError("AxisName_V Equals Null");
     }
