@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -168,7 +168,7 @@ MonoBehaviour:
   AxisName_V: Y
   PressColor: {r: 0.5686275, g: 0.5686275, b: 0.5686275, a: 1}
   normalColor: {r: 1, g: 1, b: 1, a: 1}
-  PressButton: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  UpButton: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  PressButton: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+  UpButton: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
   BlockX: 0
   BlockY: 0
