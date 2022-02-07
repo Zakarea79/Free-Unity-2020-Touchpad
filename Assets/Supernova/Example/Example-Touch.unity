@@ -231,6 +231,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 1598067604257500296, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
     - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
       propertyPath: Keycode
       value: button1
@@ -247,6 +251,14 @@ PrefabInstance:
       propertyPath: PressButton
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
+      propertyPath: PressColor.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
+      propertyPath: normalColor.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
 --- !u!1 &669172289
@@ -594,6 +606,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 1598067604257500296, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
+      propertyPath: m_Color.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
     - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
       propertyPath: Keycode
       value: 
@@ -611,6 +627,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
     - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
+      propertyPath: PressColor.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
       propertyPath: PressColor.b
       value: 1
       objectReference: {fileID: 0}
@@ -621,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
       propertyPath: PressColor.r
       value: 0.7870717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1598067604257500299, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
+      propertyPath: normalColor.a
+      value: 0.49803922
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0be458c9bfa6e984799dc1f6d0bd047e, type: 3}
@@ -728,6 +752,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 3129784604818922627, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: m_Color.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
     - target: {fileID: 3129784605659199594, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
@@ -768,6 +796,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 3129784605659199597, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: m_Color.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: Range
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
       propertyPath: Reang
       value: 1
@@ -781,6 +817,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
     - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: PressColor.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: NormalColor.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
       propertyPath: BakgrundUpButton
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
@@ -788,6 +832,10 @@ PrefabInstance:
       propertyPath: BakgrundPressButton
       value: 
       objectReference: {fileID: 21300000, guid: 01e52761f1052b64a9a2d6994613037b, type: 3}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: BakgrundPressColor.a
+      value: 0.49803922
+      objectReference: {fileID: 0}
     - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
       propertyPath: BakgrundPressColor.b
       value: 0.6462264
@@ -799,6 +847,10 @@ PrefabInstance:
     - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
       propertyPath: BakgrundPressColor.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3129784605659199599, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}
+      propertyPath: BakgrundNormalColor.a
+      value: 0.49803922
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7800a177c56a4f24f95f5dd7c08d8ed4, type: 3}

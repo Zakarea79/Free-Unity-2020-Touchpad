@@ -9,16 +9,20 @@ using static ListButtonData;
 public class ZJoystoke : MonoBehaviour
 {
     private EventTrigger Et;
+    //--------------------------------------------AxisName-----------------------------------------------------
     [SerializeField] private string AxisName_H , AxisName_V;
-    public bool BlockX , BlockY; 
+    public bool BlockX , BlockY;
+    //----------------------------------------------Range------------------------------------------------------
     [Range(0 , 1f)][SerializeField] private float Range =.8f;
+    //----------------------------------------------Color-----------------------------------------------------
     public Color PressColor = new Color32(130 , 130 , 130 , 255) , NormalColor = new Color32(255,255,255, 255);
     public Color BakgrundPressColor = new Color32(130 , 130 , 130 , 255) , BakgrundNormalColor = new Color32(255,255,255, 255);
-
+    //----------------------------------------------Sprite----------------------------------------------------
     public Sprite PressButton , UpButton , BakgrundPressButton , BakgrundUpButton;
+    //-------------------------------------------------Image--------------------------------------------------
     private Image BaseColor;
     private Image BagrundBaseColor;
-    
+    //------------------------------------------------------------------------------------------------------
     private void Awake() 
     {
         if(AxisName_H != "" && Axis.ContainsKey(AxisName_H) == false) 
@@ -78,12 +82,23 @@ public class ZJoystoke : MonoBehaviour
         transform.localPosition = new Vector2(BlockX == true ? 0 : X , BlockY == true ? 0 : Y);
 
         if(AxisName_H != "")
-            Axis[AxisName_H] = Mathf.Clamp(transform.localPosition.x , -Range * 100 , Range * 100f) / (Range  * 100);
+        {
+            float Axis_H = Mathf.Clamp(transform.localPosition.x , -Range * 100 , Range * 100f) / (Range  * 100);
+            Axis[AxisName_H] = Axis_H.Equals(System.Single.NaN) ? 0 : Axis_H;
+        }
         else
+        {
             Debug.LogError("AxisName_H Equals Null");
+        }
         if(AxisName_V != "")
-            Axis[AxisName_V] = Mathf.Clamp(transform.localPosition.y , -Range * 100 , Range * 100f) / (Range  * 100);
+        {
+            float Axis_V = Mathf.Clamp(transform.localPosition.y , -Range * 100 , Range * 100f) / (Range  * 100);
+            Axis[AxisName_V] = Axis_V.Equals(System.Single.NaN) ? 0 : Axis_V;
+        }
         else
+        {
             Debug.LogError("AxisName_V Equals Null");
+        }
+            
     }
 }
