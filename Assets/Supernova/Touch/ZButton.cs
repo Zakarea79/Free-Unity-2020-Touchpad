@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using static ListButtonData;
 
-[HelpURL(@"https://github.com/Zakarea79/Free-Unity-Touchpad")]
+[HelpURL(@"https://github.com/Zakarea79/Free-Unity-2020-Touchpad")]
 public class ZButton : MonoBehaviour
 {
     private EventTrigger Et;
