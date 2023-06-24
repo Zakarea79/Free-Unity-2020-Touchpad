@@ -33,6 +33,22 @@ public​ ​static​ ​float​ ​GetAxis​(​)
 
 float​ ​x​ ​=​ ​ZInput​.​GetAxis​(​"​X​"​);<br>
 
+برای گرفتن دایرکش جوی استوک میتونید از متد های استفاده کنید
+
+public static Quaternion Get_2D_Direction(string Direction)
+
+//---------
+
+public static Quaternion Get_3D_Direction(string Direction)
+
+//---------
+
+بعنوان مثال 
+
+transform.rotation = ZInput.Get_3D_Direction("3D_Dir");
+
+transform.rotation = ZInput.Get_2D_Direction("2D_Dir");
+
 پریفاب های باتن و جوی استوک در پوشه 
 
 prefab 
