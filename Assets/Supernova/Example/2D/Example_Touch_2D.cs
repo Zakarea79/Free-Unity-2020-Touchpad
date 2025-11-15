@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class Example_Touch_2D : MonoBehaviour
 {
-    // Update is called once per frame
+    void Start()
+    {
+        ZInput.EnableWarning = false;
+    }
     void Update()
     {
         float x = ZInput.GetAxis("X");

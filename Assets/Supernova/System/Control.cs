@@ -20,120 +20,128 @@ public static class ListButtonData
 
 public static class ZInput
 {
-
+    public static bool EnableWarning = true;
     public static bool GetKeyDown(string key)
     {
-        try
+        if (Button_Down.ContainsKey(key) == true)
         {
             bool temp = Button_Down[key];
             Button_Down[key] = false;
             return temp;
         }
-        catch (System.Exception)
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Key {key} Not Fund");
+            Debug.LogWarning($"Supernova Message : Key {key} Not Fund");
         }
+        return false;
     }
 
     public static bool GetKeyUp(string key)
     {
-        try
+        if (Button_Up.ContainsKey(key) == true)
         {
             bool temp = Button_Up[key];
             Button_Up[key] = false;
             return temp;
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Key {key} Not Fund");
+            Debug.LogWarning($"Supernova Message : Key {key} Not Fund");
         }
+        return false;
     }
 
     public static bool GetKeyPress(string key)
     {
-        try
+        if (Button_Press.ContainsKey(key) == true)
         {
             return Button_Press[key];
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Key {key} Not Fund");
+            Debug.LogWarning($"Supernova Message : Key {key} Not Fund");
         }
+        return false;
     }
     //-----------------------------------------------------------
     public static bool GetKeyDown(KeyCode key)
     {
-        try
+        if (Button_Down_KeyCode.ContainsKey(key) == true)
         {
             bool temp = Button_Down_KeyCode[key];
             Button_Down_KeyCode[key] = false;
             return temp;
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Key {key} Not Fund");
+            Debug.LogWarning($"Supernova Message : Key {key} Not Fund");
         }
+        return false;
     }
 
     public static bool GetKeyUp(KeyCode key)
     {
-        try
+        if (Button_Up_KeyCode.ContainsKey(key) == true)
         {
             bool temp = Button_Up_KeyCode[key];
             Button_Up_KeyCode[key] = false;
             return temp;
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Key {key} Not Fund");
+            Debug.LogWarning($"Supernova Message : Key {key} Not Fund");
         }
-
+        return false;
     }
 
     public static bool GetKeyPress(KeyCode key)
     {
-        try
+        if (Button_Press_KeyCode.ContainsKey(key) == true)
         {
             return Button_Press_KeyCode[key];
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Key {key} Not Fund");
+            Debug.LogWarning($"Supernova Message : Key {key} Not Fund");
         }
+        return false;
     }
     //------------------------------------------------
 
     public static float GetAxis(string AxisName)
     {
-        try
+        if (Axis.ContainsKey(AxisName) == true)
         {
             return Axis[AxisName];
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Axis {AxisName} Not Fund");
+            Debug.LogWarning($"Supernova Message : Axis {AxisName} Not Fund");
         }
+        return 0;
     }
-    public static Quaternion Get_3D_Direction(string Direction) 
+    public static Quaternion Get_3D_Direction(string Direction)
     {
-        try
+        if (Direction3D.ContainsKey(Direction) == true)
         {
             return Direction3D[Direction];
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : DirAxis {Direction} Not Fund");
+            Debug.LogWarning($"Supernova Message : Direction 2D {Direction} Not Fund");
         }
+        return new Quaternion();
     }
-    public static Quaternion Get_2D_Direction(string Direction) 
+    public static Quaternion Get_2D_Direction(string Direction)
     {
-        try
+        if (Direction2D.ContainsKey(Direction) == true)
         {
             return Direction2D[Direction];
         }
-        catch
+        else if (EnableWarning == true)
         {
-            throw new System.Exception($"Supernova Message : Direction 2D {Direction} Not Fund");
+            Debug.LogWarning($"Supernova Message : Direction 2D {Direction} Not Fund");
         }
+        return new Quaternion();
     }
 }

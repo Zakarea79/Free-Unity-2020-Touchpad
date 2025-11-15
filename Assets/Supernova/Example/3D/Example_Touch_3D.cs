@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Example_Touch_3D : MonoBehaviour
 {
+    void Start()
+    {
+        ZInput.EnableWarning = false;
+    }
     void Update()
     {
         float x = ZInput.GetAxis("X");
